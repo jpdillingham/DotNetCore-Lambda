@@ -8,7 +8,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Amazon.Lambda.AspNetCoreServer;
 
-namespace DotNetCoreLambda
+namespace <your app namespace>
 {
     public class LambdaEntryPoint : APIGatewayProxyFunction
     {
