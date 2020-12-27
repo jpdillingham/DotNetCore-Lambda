@@ -9,7 +9,7 @@ namespace DotNetCoreLambda
         {
             builder
                 .UseStartup<Startup>()
-                .UseApiGateway();
+                .UseLambdaServer();
         }
     }
 }

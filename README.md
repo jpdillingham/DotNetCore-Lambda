@@ -1,6 +1,6 @@
-# .NET Core 2.1 on AWS Lambda
+# .NET Core 3.1 on AWS Lambda
 
-1. Create a new .NET Core 2.1 Web API project
+1. Create a new .NET Core 3.1 Web API project
 2. Add the `Amazon.Lambda.AspNetCoreServer` NuGet package
 3. Add the following class to the root directory:
 
@@ -16,7 +16,7 @@ namespace <your app namespace>
         {
             builder
                 .UseStartup<Startup>()
-                .UseApiGateway();
+                .UseLambdaServer();
         }
     }
 }
